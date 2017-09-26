@@ -9,8 +9,15 @@
 <h1>Youtube Suggested Videos Game Generator (YTSVG2 for short)</h1>
 <p>Playing Jacksfilms' <a href="https://youtu.be/bM_pAXi_pEQ?t=33s" target="_blank">Suggested Videos Game</a> but have no ideas? Fear not! Click the button below to get your own suggested video path!</p>
 <a class="button" id="button" onclick="getTerms()">Click Me</a>
-
-<!--<button onclick="getTerms()">Click Me</button>-->
+<style>
+#bottomText {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+</style>
+<p id="bottomText">Made with <3 by <a href=https://github.com/benzarr410>Benzarr410</a> for jacksfilms</p>
 
 <script>
 function getTerms() {
@@ -29,7 +36,7 @@ document.getElementById("button").addEventListener("click", function(){})
 }}
 </script>
 <style>
-    .button {
+.button {
     font-weight: bolder;
     padding: 1% 1.5%;
     font-size: 15px;

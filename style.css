@@ -13,4 +13,13 @@ a:visited {
     color: #D1D8D7;
     font-weight: bold;
 }
+::-moz-selection { /* Code for Firefox */
+    color: #D1D8D7;
+    background: #2F3635;
+}
+
+::selection {
+    color: #D1D8D7;
+    background: #2F3635;
+}
 
