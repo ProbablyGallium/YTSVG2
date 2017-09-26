@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="style.css">        
+</head>
+<body>
+<title>Youtube Suggested Videos Game Generator</title>
+
+<h1>Youtube Suggested Videos Game Generator (YTSVG2 for short)</h1>
+<p>Playing Jacksfilms' <a href="https://youtu.be/bM_pAXi_pEQ?t=33s" target="_blank">Suggested Videos Game</a> but have no ideas? Fear not! Click the button below to get your own suggested video path!</p>
+<a class="button" id="button" onclick="getTerms()">Click Me</a>
+
+<!--<button onclick="getTerms()">Click Me</button>-->
+
+<script>
+function getTerms() {
+var terms = ["The Emoji Movie", "Bob Ross", "Jacksfilms", "The Queen of England", "My Little Pony", "Donald Trump", "Fidget Spinners", "Michael Rosen", "Spongebob Squarepants", "Roblox", "Need for Speed World", "Death Road to Canada", "Pokemon", "Rickroll"]
+var rand = terms[Math.floor(Math.random() * terms.length)];
+var rand2 = terms[Math.floor(Math.random() * terms.length)];
+if (rand === rand2) {
+    getTerms()
+}
+else {
+var path = rand + " -> " + rand2
+var link = rand.split(" ")
+document.getElementById("pathHolder").innerHTML = path
+document.getElementById("button").addEventListener("click", function(){})
+
+}}
+</script>
+<style>
+    .button {
+    font-weight: bolder;
+    padding: 1% 1.5%;
+    font-size: 15px;
+    display: inline-block;
+    background-color: #2F3635;
+    color: #D1D8D7;
+    border: 2px solid #e7e7e7;
+    transition: 0.2s
+}
+.button:hover {
+    border: 2px solid #cccccc;
+    font-weight: normal;
+    color:black;
+    background-color: #CCCCCC;
+}
+</style>
+<p id="pathHolder"></p>
+</body>
+</html>
